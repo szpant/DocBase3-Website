@@ -1,0 +1,759 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"   "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
+
+<!-- Mirrored from puma/tmr/docbase3.nsf//index/chain_of_responsibility_audit by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Mar 2024 06:49:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+<title>Chain of Responsibility Audit</title><meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="0">
+<script language="JavaScript" type="text/javascript">
+var ExtDBName = 'http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf';
+var DBName = 'tmr/docbase3.html';
+var XMLSource = '(BE_OrgProducts)?ReadViewEntries&CollapseView&RestricttoCategory=';
+var XMLSourceSitemap = '(BE_OrgProductsFormatted)?ReadViewEntries&ExpandView&Count=100000&RestricttoCategory=';
+var XMLCategories = '(BE_OrgProducts)?ReadViewEntries&RestrictToCategory=';
+var XSLSource = 'prodlist.xsl';
+var UserOrg = '0000';
+</script>
+	<!-- Template style sheet -->
+	<link rel="stylesheet" href="../css/dbase2.css/%24file/dbase2.css" type="text/css" media="all">
+
+<script type="text/javascript" src="../js/dbase2.js/%24file/dbase2.js"></script>
+<!--[if IE]><link rel="stylesheet" href="/tmr/docbase3.nsf/css/ie.css/$file/ie.css" type="text/css" media="all"><![endif]-->
+
+<link rel="SHORTCUT ICON" type="image/x-icon" href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf/favicon.ico"/>
+<meta http-equiv="Expires" content="0"><meta http-equiv="Cache-Control" content="must-revalidate"> <meta http-equiv="Cache-Control" content="no-cache">
+<script language="JavaScript" type="text/javascript">
+<!-- 
+function switchTab(tabname) {	for(var i=1; document.getElementById('c'+i); i++) {		document.getElementById('c'+i).style.display = tabname == 'c' + i ? 'block' : 'none';		document.getElementById('tab'+i).style.fontWeight=tabname == 'c' + i ? 'bold': 'normal';	}	} function switchTaba(tabname) {	for(var i=1; document.getElementById('a'+i); i++) {		document.getElementById('a'+i).style.display = tabname == 'a' + i ? 'block' : 'none';		document.getElementById('taba'+i).style.fontWeight=tabname == 'a' + i ? 'bold': 'normal';	}	} function switchTabb(tabname) {	for(var i=1; document.getElementById('b'+i); i++) {		document.getElementById('b'+i).style.display = tabname == 'b' + i ? 'block' : 'none';		document.getElementById('tabb'+i).style.fontWeight=tabname == 'b' + i ? 'bold': 'normal';	}	} function switchTabc(tabname) {	for(var i=1; document.getElementById('c'+i); i++) {		document.getElementById('c'+i).style.display = tabname == 'c' + i ? 'block' : 'none';		document.getElementById('tabc'+i).style.fontWeight=tabname == 'c' + i ? 'bold': 'normal';	}	} function switchTabd(tabname) {	for(var i=1; document.getElementById('d'+i); i++) {		document.getElementById('d'+i).style.display = tabname == 'd' + i ? 'block' : 'none';		document.getElementById('tabd'+i).style.fontWeight=tabname == 'd' + i ? 'bold': 'normal';	}	} function switchTabe(tabname) {	for(var i=1; document.getElementById('e'+i); i++) {		document.getElementById('e'+i).style.display = tabname == 'e' + i ? 'block' : 'none';		document.getElementById('tabe'+i).style.fontWeight=tabname == 'e' + i ? 'bold': 'normal';	}	} function switchTabf(tabname) {	for(var i=1; document.getElementById('f'+i); i++) {		document.getElementById('f'+i).style.display = tabname == 'f' + i ? 'block' : 'none';		document.getElementById('tabf'+i).style.fontWeight=tabname == 'f' + i ? 'bold': 'normal';	}	} function switchTabg(tabname) {	for(var i=1; document.getElementById('g'+i); i++) {		document.getElementById('g'+i).style.display = tabname == 'g' + i ? 'block' : 'none';		document.getElementById('tabg'+i).style.fontWeight=tabname == 'g' + i ? 'bold': 'normal';	}	} function switchTabh(tabname) {	for(var i=1; document.getElementById('h'+i); i++) {		document.getElementById('h'+i).style.display = tabname == 'h' + i ? 'block' : 'none';		document.getElementById('tabh'+i).style.fontWeight=tabname == 'h' + i ? 'bold': 'normal';	}	} function switchTabi(tabname) {	for(var i=1; document.getElementById('i'+i); i++) {		document.getElementById('i'+i).style.display = tabname == 'i' + i ? 'block' : 'none';		document.getElementById('tabi'+i).style.fontWeight=tabname == 'i' + i ? 'bold': 'normal';	}	} function switchTabj(tabname) {	for(var i=1; document.getElementById('j'+i); i++) {		document.getElementById('j'+i).style.display = tabname == 'j' + i ? 'block' : 'none';		document.getElementById('tabj'+i).style.fontWeight=tabname == 'j' + i ? 'bold': 'normal';	}	} function switchTabk(tabname) {	for(var i=1; document.getElementById('k'+i); i++) {		document.getElementById('k'+i).style.display = tabname == 'k' + i ? 'block' : 'none';		document.getElementById('tabk'+i).style.fontWeight=tabname == 'k' + i ? 'bold': 'normal';	}	} 
+// -->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!-- 
+document._domino_target = "_self";
+function _doClick(v, o, t) {
+  var returnValue = false;
+  var url="/tmr/docbase3.nsf/index/chain_of_responsibility_audit?OpenDocument&Click=" + v;
+  if (o.href != null) {
+    o.href = url;
+    returnValue = true;
+  } else {
+    if (t == null)
+      t = document._domino_target;
+    window.open(url, t);
+  }
+  return returnValue;
+}
+// -->
+</script>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" onload="f = document;if (f.getElementById('Layout').value != &quot;Simple&quot;) {	loadMenu(XMLSource , XSLSource);}if (f.getElementById('docTitle').value == &quot;sitemap&quot;) {     	loadSitemap(XMLSourceSitemap , 'sitelist.xsl');}hackHomepage();">
+
+<form action="#"><input id="HTTP_Referer" style="display:none" value="daily_messages_-_july_2021.html">
+<input id="MenuPos"   style="display:none" value="16.x.x.1">
+<input id="Layout" style="display:none"  value="Default"><input id="docTitle" style="display:none"  value="Chain of Responsibility Audit">
+<input id="docUNID" style="display:none"  value="x 1.16.x.x.1">
+</form>
+<!-- Page Header -->
+<div id="header"><div class="inner">
+<p><a id="qg-logo" href="http://www.qld.gov.au/"  target="_blank"><img src="../img/qg-logo.gif/%24file/qg-logo.gif" alt="Queensland Government"></a>                        
+                           <ul id="tools">
+			<li><a href="home.html" accesskey="2">Home</a></li>
+			<li><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf/index/feedback" accesskey="4">Feedback</a></li>
+                                        <li><a href="help.html" accesskey="5">Help</a></li>
+ <li><a href="docbase_address_book.html" accesskey="10">DocBase Address Book</a></li>
+<li><a href="email_templates.html" accesskey="11">Email Templates</a></li>
+<li><a href="correspondence_email_templates.html" accesskey="11">Correspondence Templates</a></li>
+ 			<li class="last-child">
+			  <form method="post" action="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//WebSearch?CreateDocument" name="_websearchmini" id="webSearchMini" onSubmit="return validateMiniSearch(this)">	    
+				<input name="MiniQuery" value="" id="MiniQuery" size="20" >			
+				<button type="submit" name="submitbtn" id="submitbtnmini">Search</button>	
+                                          </form>
+			</li>
+		</ul>
+		<a id="agency" href="http://www.tmr.qld.gov.au/"  target="_blank"><img src="../img/agency.gif/%24file/agency.gif" alt="Department of Transport and Main Roads"></a><br>
+<br>
+<style TYPE="text/css"> pre, text, table, font, th, td, tr {font-size: 8pt; font-family: verdana; font-color: navy;} SPaN.L {color: gray; font-size: 8pt; font-family: verdana; font-style:italic } div.i1 {padding-left: 13pt;} div.note {padding-left: 29pt;} ul, OL, DL, DT, DD, PRE {margin-top: 0em; margin-bottom: 0em;} dl, dt, dd {padding-left: 0pt} ul, li {list-style-type: disc} OL, ul {padding-left: 13pt}  </style><br>
+</div></div>
+<div id="page-container">
+<!-- Navigator -->
+        <div id="nav-section">
+<div class="inner"> 
+<!-- begin #section-search -->
+<h3>Search Transport Compliance   </h3>
+<form method="post" action="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//WebSearch?CreateDocument" name="_webSearch" id="webSearch" onSubmit="return validateSearch(this)">      
+<input id="DocumentArea" style="display:none" name="DocumentArea"  value="Transport Compliance   ">         
+                    <input name="Query" value="" id="Query" size="30"><input type="checkbox" checked="" value="section" name="ProductArea" style="display:none"/>
+                    <button type="submit" name="submitbtn" id="submitbtn">Search</button>
+
+</form>
+<!-- end #section-search -->
+<!-- begin #nav-section -->
+<p><h3>Navigation</h3><div id="menuTree"> 
+                Loading navigation ...
+            </div>
+            <h3>Create a Request</h3>
+            <div id="create">
+                <a href="recall_stationery.html">Recalling Documents Request</a><br><br>
+<a href="request_templates.html" target="_blank">Daily, Urgent and Project Update Request Templates</a><br><br>
+            </div><br/>
+<!-- end #nav-section -->
+</div>
+</div>		
+<div id="content-container">
+
+
+
+<div id="article"><div class="inner">
+				
+				<div id="content">
+<div id="content-head">
+<h3><div style="text-align:left;">Chain of Responsibility Audit (7654)</div></h3>
+</div>
+<br>
+
+<table bordercolor="#ffffff" border="1">
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">What it is</font></td><td width="586" bgcolor="#EFEFEF"><font size="2" color="#000080" face="Verdana">The Chain of Responsibility (CoR) Audits aim to enhance the safety of the personalised transport industry by ensuring all persons in the CoR have systems, processes and actions in place to operate their services safely and comply with all legislative requirements.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">The CoR framework sets out the obligations of each participant in the CoR, this includes :</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Authorised booking entities (and any local nominee),	</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">other persons who provide booking services, </font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">operators of taxi services or booked hire services (booked hire services includes limousines),</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">holders of taxi, limousines or booked hire service licences,</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">drivers of vehicles used to provide the services,</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">registered operators of vehicles being used to provide the services.</font></ul>
+<br>
+<font size="2" color="#000080" face="Verdana">Under </font><i><font size="2" color="#000080" face="Verdana">TOPTA s91ZN a CoR</font></i><font size="2" color="#000080" face="Verdana"> audit includes the </font><font size="2" color="#000080" face="Verdana">'service'</font><font size="2" color="#000080" face="Verdana">, the </font><font size="2" color="#000080" face="Verdana">'</font><font size="2" color="#000080" face="Verdana">vehicles used to provide the service</font><font size="2" color="#000080" face="Verdana">'</font><font size="2" color="#000080" face="Verdana"> and the</font><font size="2" color="#000080" face="Verdana"> 'person business activities</font><font size="2" color="#000080" face="Verdana">' relat</font><font size="2" color="#000080" face="Verdana">ed to providing the service.</font></td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Audit Types</font></td>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+function _dSectionExpand(sec) {
+	 document.getElementById("cSec"+sec).style.display = "none";
+	 document.getElementById("xSec"+sec).style.display = "block";
+}
+function _dSectionCollapse(sec) {
+	 document.getElementById("xSec"+sec).style.display = "none";
+	 document.getElementById("cSec"+sec).style.display = "block";
+}
+// -->
+</script>
+<td width="586" bgcolor="#EFEFEF">
+<table bordercolor="#efefef" border="1">
+<tr valign="top"><td width="582" bgcolor="#E2D1D8"><div id="cSec2"><a href="javascript:_dSectionExpand('2')" onclick="return _dSectionExpand('2');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Scheduled Audits"></a><a onclick="return _dSectionExpand('2');"><font size="2" color="#000080" face="Verdana">Scheduled Audits</font></a></div><div id="xSec2"><a href="javascript:_dSectionCollapse('2')" onclick="return _dSectionCollapse('2');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Scheduled Audits"></a><a onclick="return _dSectionCollapse('2');"><font size="2" color="#000080" face="Verdana">Scheduled Audits</font></a>
+<ul><font size="2" color="#000080" face="Verdana">All BEAs will be audited within 3 years. There will a rolling schedule to plan and manage the programme. While all BEAs will be audited, large BEAs (&gt;50 affiliated vehicles) will be scheduled for a CoR audit within the first year.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('2');
+// -->
+</script>
+</td></tr>
+
+<tr valign="top"><td width="582" bgcolor="#E2D1D8"><div id="cSec3"><a href="javascript:_dSectionExpand('3')" onclick="return _dSectionExpand('3');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Triggered Audits"></a><a onclick="return _dSectionExpand('3');"><font size="2" color="#000080" face="Verdana">Triggered Audits</font></a></div><div id="xSec3"><a href="javascript:_dSectionCollapse('3')" onclick="return _dSectionCollapse('3');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Triggered Audits"></a><a onclick="return _dSectionCollapse('3');"><font size="2" color="#000080" face="Verdana">Triggered Audits</font></a>
+<ul><font size="2" color="#000080" face="Verdana">A BEA can have a Compliance Check triggered by a complaint/investigation or they may be randomly selected.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('3');
+// -->
+</script>
+</td></tr>
+</table>
+</td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Audit Preparation</font></td><td width="586" bgcolor="#EFEFEF">
+<table bordercolor="#efefef" border="1">
+<tr valign="top"><td width="582" bgcolor="#E2D1D8"><div id="cSec4"><a href="javascript:_dSectionExpand('4')" onclick="return _dSectionExpand('4');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Prior to issuing the Audit Notice"></a><a onclick="return _dSectionExpand('4');"><font size="2" color="#000080" face="Verdana">Prior to issuing the Audit Notice</font></a></div><div id="xSec4"><a href="javascript:_dSectionCollapse('4')" onclick="return _dSectionCollapse('4');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Prior to issuing the Audit Notice"></a><a onclick="return _dSectionCollapse('4');"><font size="2" color="#000080" face="Verdana">Prior to issuing the Audit Notice</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Create a CID PT Audit entry, </font><font size="2" color="#000080" face="Verdana"><a href="compliance_intelligence_database_(cid)_procedures.html" target="_blank"><b>Refer:</b><i> Transport Compliance > Systems > Compliance Intelligence Database (CID) > How To:Compliance Intelligence Database (CID) Procedures</i></a></font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">The pre-audit checks should be commenced with enough time for the Audit Notice to be served on the person at least 4 weeks prior to the date stated on the Audit Notice.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Complete the following pre-audit checks in conjunction with your local Translink Regional Operations unit.  </font>
+<table bordercolor="#ffffff" border="1">
+<tr valign="top"><td width="149" bgcolor="#73172C"><b><font size="2" color="#FFFFFF" face="Verdana">Source</font></b></td><td width="196" bgcolor="#73172C"><b><font size="2" color="#FFFFFF" face="Verdana">Action</font></b></td><td width="207" bgcolor="#73172C"><b><font size="2" color="#FFFFFF" face="Verdana">Data Required</font></b></td></tr>
+
+<tr valign="top"><td width="149" bgcolor="#F6F6F6"><font size="2" color="#000080" face="Verdana">Personalised Transport Policy</font></td><td width="196" bgcolor="#F6F6F6"><font size="2" color="#000080" face="Verdana">Email request to</font><font size="2" color="#0000FF" face="Verdana"> -</font><br>
+<a href="mailto:Personalised.transport@tmr.qld.gov.au"><font size="2" face="Verdana">Personalised.transport@tmr.qld.gov.au</font></a></td><td width="207" bgcolor="#F6F6F6">
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Booking Data</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Booking Data History Report</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Details on any operator issues</font>
+<li type="disc"><i><font size="2" color="#000080" face="Verdana">Security Camera download notification</font></i><font size="2" color="#000080" face="Verdana"> (F4343) submitted for the last month or quarter</font></ul>
+</td></tr>
+
+<tr valign="top"><td width="149" bgcolor="#E2D1D8"><font size="2" color="#000080" face="Verdana">Local Translink Regional Office</font></td><td width="196" bgcolor="#E2D1D8"><font size="2" color="#000080" face="Verdana">Email local Translink Regional Office (TRO)</font></td><td width="207" bgcolor="#E2D1D8">
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Any complaints against the BEA</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Any operator issues</font></ul>
+</td></tr>
+
+<tr valign="top"><td width="149" bgcolor="#F6F6F6"><font size="2" color="#000080" face="Verdana">TICA</font></td><td width="196" bgcolor="#F6F6F6"><img width="1" height="1" src="../../../icons/ecblank.gif" border="0" alt=""></td><td width="207" bgcolor="#F6F6F6">
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Fleet size</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Categories of vehicles associated with BEA</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Vehicles attached to BHSL</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Offence history</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">COI currency</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">CTP</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">For BHTX check currency and history</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Check currency of Driver Licence</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Any relevant offence history</font></ul>
+</td></tr>
+
+<tr valign="top"><td width="149" bgcolor="#E2D1D8"><font size="2" color="#000080" face="Verdana">BHSL Hub</font></td><td width="196" bgcolor="#E2D1D8"><font size="2" color="#000080" face="Verdana">Email: </font><a href="mailto:bhslhub@translink.com.au"><font size="2" color="#0000FF" face="Verdana">bhslhub@translink.com.au</font></a></td><td width="207" bgcolor="#E2D1D8">
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">details of previous month drivers disaffiliated with the BEA</font></ul>
+</td></tr>
+
+<tr valign="top"><td width="149" bgcolor="#F6F6F6"><font size="2" color="#000080" face="Verdana">BEA Signage Register</font></td><td width="196" bgcolor="#F6F6F6"><font size="2" color="#000080" face="Verdana">Check BEA Signage Register in </font><a href="Notes://shb1ln04/4A25635C001D648C" target="_blank"><i><font size="2" color="#0000FF" face="Verdana">Passenger Transport database</font></i></a><br>
+<b><font size="2" color="#000080" face="Verdana">Refer:</font></b><font size="2" color="#000080" face="Verdana"> </font><i><font size="2" color="#000080" face="Verdana">Personalised Transport - Taxi, Limousine, Booked Hire - PART I: Booking Entity Authorisation - 3. Operational Resources - 3.01 BEA Booked Hire Service Identification Signage Register for approved image.</font></i><br>
+<font size="2" color="#000080" face="Verdana"> </font><br>
+<font size="2" color="#000080" face="Verdana">If the BEA has lodged, the signage may be attached in the Managed Book Hire database.</font></td><td width="207" bgcolor="#F6F6F6">
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Approved Booked hire signage </font></ul>
+</td></tr>
+</table>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('4');
+// -->
+</script>
+</td></tr>
+
+<tr valign="top"><td width="582" bgcolor="#E2D1D8"><div id="cSec5"><a href="javascript:_dSectionExpand('5')" onclick="return _dSectionExpand('5');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Issue Audit Notice"></a><a onclick="return _dSectionExpand('5');"><font size="2" color="#000080" face="Verdana">Issue Audit Notice</font></a></div><div id="xSec5"><a href="javascript:_dSectionCollapse('5')" onclick="return _dSectionCollapse('5');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Issue Audit Notice"></a><a onclick="return _dSectionCollapse('5');"><font size="2" color="#000080" face="Verdana">Issue Audit Notice</font></a><div id="cSec5_1">
+<ul><a href="javascript:_dSectionExpand('5_1')" onclick="return _dSectionExpand('5_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Contact the person to be audited"></a><a onclick="return _dSectionExpand('5_1');"><font size="2" color="#000080" face="Verdana">Contact the person to be audited</font></a></ul>
+</div><div id="xSec5_1">
+<ul><a href="javascript:_dSectionCollapse('5_1')" onclick="return _dSectionCollapse('5_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Contact the person to be audited"></a><a onclick="return _dSectionCollapse('5_1');"><font size="2" color="#000080" face="Verdana">Contact the person to be audited</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Once the pre-audit checks have been complete the Lead Transport Inspector will make contact with the person to be audited to:</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">confirm the following details for the Audit Notice, ensuring it matches with the information in TICA, CID Intell or ASIC search:</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Full company Name (Pty Ltd)</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Full Name of Director of Company  </font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Business address &#8211; where the audit will be conducted </font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Confirm an audit date not less than 4 weeks in advance. (There is no upper limit for the advance notice, work with your STI on the audit time frame).</font></ul>
+
+<li type="disc"><font size="2" color="#000080" face="Verdana">Advise they must provide TMR with the following:</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Driver licence and driver authorisation details for all drivers currently affiliated.</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Registration details of vehicles used in conjunction with the operation of the personalised transport service.</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Determine if any records that the person is required to keep and/or will provide access to during the audit are in a language other than English, if so advise the person the make their own arrangements for the records to be translated to English.</font><div id="cSec5_1_1"><a href="javascript:_dSectionExpand('5_1_1')" onclick="return _dSectionExpand('5_1_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Preparing the Audit Notice"></a><a onclick="return _dSectionExpand('5_1_1');"><font size="2" color="#000080" face="Verdana">Preparing the Audit Notice</font></a></div><div id="xSec5_1_1"><a href="javascript:_dSectionCollapse('5_1_1')" onclick="return _dSectionCollapse('5_1_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Preparing the Audit Notice"></a><a onclick="return _dSectionCollapse('5_1_1');"><font size="2" color="#000080" face="Verdana">Preparing the Audit Notice</font></a><br>
+<font size="2" color="#000080" face="Verdana">Complete the Audit Notice template</font><font size="2" color="#000080" face="Verdana"> </font><font size="2" color="#000080" face="Verdana">and attach the Facts Sheet for chain of responsibility audits.</font><br>
+<br>
+
+<table bordercolor="#ffffff" border="1">
+<tr valign="top"><td width="509" bgcolor="#FFFFFF"><div align="center"><font size="2" color="#000080" face="Verdana"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/Audit Notice v1.2 150421 (3).docx/$File/Audit Notice v1.2 150421 (3).docx?OpenElement" target="_new">Audit Notice v1.2 150421 (3)</a></font></div></td></tr>
+
+<tr valign="top"><td width="509" bgcolor="#F6F6F6"><div align="center"><font size="2" color="#000080" face="Verdana"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/Fact sheet chain of responsibility audits (8).pdf/$File/Fact sheet chain of responsibility audits (8).pdf?OpenElement" target="_new">Fact Sheet - Chain of Responsibility Audits (8)</a></font></div></td></tr>
+</table>
+<br>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('5_1_1');
+// -->
+</script>
+</ul>
+</ul>
+</ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('5_1');
+// -->
+</script>
+<div id="cSec5_2">
+<ul><a href="javascript:_dSectionExpand('5_2')" onclick="return _dSectionExpand('5_2');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Serving the Audit Notice"></a><a onclick="return _dSectionExpand('5_2');"><font size="2" color="#000080" face="Verdana">Serving the Audit Notice</font></a></ul>
+</div><div id="xSec5_2">
+<ul><a href="javascript:_dSectionCollapse('5_2')" onclick="return _dSectionCollapse('5_2');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Serving the Audit Notice"></a><a onclick="return _dSectionCollapse('5_2');"><font size="2" color="#000080" face="Verdana">Serving the Audit Notice</font></a>
+<ul><font size="2" color="#000080" face="Verdana">The Audit Notice must be served on the person personally, preferably on the Director of the Company. If this is not possible then proof of service by other means is necessary. </font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">A written confirmation of service is required and must retained with a copy of the Audit Notice.</font></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('5_2');
+// -->
+</script>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('5');
+// -->
+</script>
+</td></tr>
+</table>
+</td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Conducting the Audit<br>
+</font></td><td width="586" bgcolor="#EFEFEF">
+<table bordercolor="#efefef" border="1">
+<tr valign="top"><td width="583" bgcolor="#E2D1D8"><div id="cSec6"><a href="javascript:_dSectionExpand('6')" onclick="return _dSectionExpand('6');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Failure to comply with Audit Notice"></a><a onclick="return _dSectionExpand('6');"><font size="2" color="#000080" face="Verdana">Failure to comply with Audit Notice</font></a></div><div id="xSec6"><a href="javascript:_dSectionCollapse('6')" onclick="return _dSectionCollapse('6');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Failure to comply with Audit Notice"></a><a onclick="return _dSectionCollapse('6');"><font size="2" color="#000080" face="Verdana">Failure to comply with Audit Notice</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Failure to comply with the Audit Notice is an offence and may be prosecuted by PIN or BTA,</font><b><font size="2" color="#000080" face="Verdana"> Refer:</font></b><font size="2" color="#000080" face="Verdana"> </font><i><font size="2" color="#000080" face="Verdana">s91ZO if TOPTA</font></i><font size="2" color="#000080" face="Verdana">.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('6');
+// -->
+</script>
+</td></tr>
+
+<tr valign="top"><td width="583" bgcolor="#E2D1D8"><div id="cSec7"><a href="javascript:_dSectionExpand('7')" onclick="return _dSectionExpand('7');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Entry to Premises"></a><a onclick="return _dSectionExpand('7');"><font size="2" color="#000080" face="Verdana">Entry to Premises</font></a></div><div id="xSec7"><a href="javascript:_dSectionCollapse('7')" onclick="return _dSectionCollapse('7');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Entry to Premises"></a><a onclick="return _dSectionCollapse('7');"><font size="2" color="#000080" face="Verdana">Entry to Premises</font></a>
+<ul><font size="2" color="#000080" face="Verdana">The power for an Authorised Officer to enter to conduct an audit, following issue of the Audit Notice is provided in </font><i><font size="2" color="#000080" face="Verdana">s120(d) TOPTA</font></i><font size="2" color="#000080" face="Verdana">.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Section </font><i><font size="2" color="#000080" face="Verdana">91ZN(1)(b)</font></i><font size="2" color="#000080" face="Verdana"> of the Act also states that the person is '</font><i><font size="2" color="#000080" face="Verdana">&#8230; to cooperate with every reasonable requirement of the chief executive or authorised person</font></i><font size="2" color="#000080" face="Verdana">'.</font><div id="cSec7_1"><a href="javascript:_dSectionExpand('7_1')" onclick="return _dSectionExpand('7_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Commencing Onsite Audit"></a><a onclick="return _dSectionExpand('7_1');"><font size="2" color="#000080" face="Verdana">Commencing Onsite Audit</font></a></div><div id="xSec7_1"><a href="javascript:_dSectionCollapse('7_1')" onclick="return _dSectionCollapse('7_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Commencing Onsite Audit"></a><a onclick="return _dSectionCollapse('7_1');"><font size="2" color="#000080" face="Verdana">Commencing Onsite Audit</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Both Authorised Officers must: </font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">activate their BWC prior to entering the premises </font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">identify themselves as Transport Inspectors </font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">produce their ID cards</font></ul>
+<font size="2" color="#000080" face="Verdana">Record in the official notebook: </font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">the name of the company </font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">name of the person </font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">the address of the location where the audit is taking place</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">the name of the corroborating Transport Inspector</font></ul>
+<br>
+<font size="2" color="#000080" face="Verdana">The primary auditor will explain the reason for the PT CoR Audit and advise the person the interaction is being recorded for transparency and accountability purposes, and verbally provide the privacy collection notice</font><i><font size="2" color="#000080" face="Verdana">.</font></i><br>
+<br>
+<b><font size="2" color="#000080" face="Verdana">For example:</font></b><br>
+<br>
+<i><font size="2" color="#000080" face="Verdana">&quot;Good evening/morning/afternoon. My name is John Smith, I am a Transport Inspector with Transport and Main Roads, here is my ID (SHOW ID), we are conducting an Audit to assess your compliance with relevant transport legislation in relation to -</font></i>
+<ul>
+<li type="disc"><i><font size="2" color="#000080" face="Verdana">providing the service, or</font></i>
+<li type="disc"><i><font size="2" color="#000080" face="Verdana">a motor vehicle used to provide the service</font></i></ul>
+<i><font size="2" color="#000080" face="Verdana">to verify information given to the chief executive about the business activities of [insert name of business] relating to providing the booking service. This interaction is being recorded for transparency and accountability purposes.</font></i></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('7_1');
+// -->
+</script>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('7');
+// -->
+</script>
+</td></tr>
+
+<tr valign="top"><td width="583" bgcolor="#E2D1D8"><div id="cSec8"><a href="javascript:_dSectionExpand('8')" onclick="return _dSectionExpand('8');"><img src="../../../icons/expand.gif" border="0" alt="Show details for PT COR Audit Checklist"></a><a onclick="return _dSectionExpand('8');"><font size="2" color="#000080" face="Verdana">PT COR Audit Checklist</font></a></div><div id="xSec8"><a href="javascript:_dSectionCollapse('8')" onclick="return _dSectionCollapse('8');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for PT COR Audit Checklist"></a><a onclick="return _dSectionCollapse('8');"><font size="2" color="#000080" face="Verdana">PT COR Audit Checklist</font></a>
+<ul><font size="2" color="#000080" face="Verdana">The PT COR Audit Checklist, for the relevant category of audit, must be used when conducting a PT COR audit.  </font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">The checklist must be fully completed. Be aware the audit checklist is provided to the customer with the Audit Report and is a discoverable document for any hearings.</font><br>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="558" bgcolor="#FFFFFF"><div align="center"><font size="2" color="#000080" face="Verdana"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/BEA CoR Audit Checklist FINAL 304021 (2).docx/$File/BEA CoR Audit Checklist FINAL 304021 (2).docx?OpenElement" target="_new">BEA CoR Audit Checklist Final 300121 (2)</a></font></div></td></tr>
+</table>
+<br>
+<font size="2" color="#000080" face="Verdana">The front page of the Audit Checklist is completed first, except for the 3rd last row </font><i><font size="2" color="#000080" face="Verdana">Audit Result, </font></i><font size="2" color="#000080" face="Verdana">this is completed when the audit has been assessed.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">If non-compliance is detected, record the evidence in the Audit Checklist in the comments section.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('8');
+// -->
+</script>
+</td></tr>
+
+<tr valign="top"><td width="583" bgcolor="#E2D1D8"><div id="cSec9"><a href="javascript:_dSectionExpand('9')" onclick="return _dSectionExpand('9');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Exit Interview"></a><a onclick="return _dSectionExpand('9');"><font size="2" color="#000080" face="Verdana">Exit Interview</font></a></div><div id="xSec9"><a href="javascript:_dSectionCollapse('9')" onclick="return _dSectionCollapse('9');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Exit Interview"></a><a onclick="return _dSectionCollapse('9');"><font size="2" color="#000080" face="Verdana">Exit Interview</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Advise the authority holder that they will be given an Audit Report, detailing the outcome of the audit, as soon as practicable. The report will provide the findings and the reasons for the findings.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">If there are any instances of non-compliance, a Direction to Comply notice/s will also be issued.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('9');
+// -->
+</script>
+</td></tr>
+</table>
+</td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Audit Report </font></td><td width="586" bgcolor="#EFEFEF">
+<table bordercolor="#efefef" border="1">
+<tr valign="top"><td width="583" bgcolor="#E2D1D8"><div id="cSec10"><a href="javascript:_dSectionExpand('10')" onclick="return _dSectionExpand('10');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Assessment"></a><a onclick="return _dSectionExpand('10');"><font size="2" color="#000080" face="Verdana">Assessment</font></a></div><div id="xSec10"><a href="javascript:_dSectionCollapse('10')" onclick="return _dSectionCollapse('10');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Assessment"></a><a onclick="return _dSectionCollapse('10');"><font size="2" color="#000080" face="Verdana">Assessment</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Assess the Audit Checklist to determine if the person was compliant or non-compliant with the audit. </font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">If there is any area of the business that was non-compliant in the Audit Checklist then that section of the audit is officially recorded as non-complaint.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Update CID when the assessment has been completed.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('10');
+// -->
+</script>
+</td></tr>
+
+<tr valign="top"><td width="583" bgcolor="#E2D1D8"><div id="cSec11"><a href="javascript:_dSectionExpand('11')" onclick="return _dSectionExpand('11');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Audit Report"></a><a onclick="return _dSectionExpand('11');"><font size="2" color="#000080" face="Verdana">Audit Report</font></a></div><div id="xSec11"><a href="javascript:_dSectionCollapse('11')" onclick="return _dSectionCollapse('11');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Audit Report"></a><a onclick="return _dSectionCollapse('11');"><font size="2" color="#000080" face="Verdana">Audit Report</font></a>
+<ul><font size="2" color="#000080" face="Verdana">There are two types of Audit Reports:</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Compliant</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Non-Compliant</font>
+<li type="disc"></ul>
+<font size="2" color="#000080" face="Verdana">A copy of the completed Audit Checklist must be attached to the Audit Report. </font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Email: </font><a href="mailto:Personalised.transport@tmr.qld.gov.au"><font size="2" color="#0000FF" face="Verdana">Personalised.transport@tmr.qld.gov.au</font></a><font size="2" color="#000080" face="Verdana"> with advice of the audit outcome. </font><br>
+<div id="cSec11_1"><a href="javascript:_dSectionExpand('11_1')" onclick="return _dSectionExpand('11_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Compliant"></a><a onclick="return _dSectionExpand('11_1');"><font size="2" color="#000080" face="Verdana">Compliant</font></a></div><div id="xSec11_1"><a href="javascript:_dSectionCollapse('11_1')" onclick="return _dSectionCollapse('11_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Compliant"></a><a onclick="return _dSectionCollapse('11_1');"><font size="2" color="#000080" face="Verdana">Compliant</font></a>
+<ul><font size="2" color="#000080" face="Verdana">The following report template is only used if all areas of the Audit Checklist, using the relevant risk assessment matrix, are compliant.</font><br>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="534" bgcolor="#FFFFFF"><div align="center"><font size="2" color="#000080" face="Verdana"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/Audit Report-Compliant v1.1.docx/$File/Audit Report-Compliant v1.1.docx?OpenElement" target="_new">Audit Report Compliant v1.1</a></font></div></td></tr>
+</table>
+<br>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('11_1');
+// -->
+</script>
+<div id="cSec11_2"><a href="javascript:_dSectionExpand('11_2')" onclick="return _dSectionExpand('11_2');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Non-Compliant"></a><a onclick="return _dSectionExpand('11_2');"><font size="2" color="#000080" face="Verdana">Non-Compliant</font></a></div><div id="xSec11_2"><a href="javascript:_dSectionCollapse('11_2')" onclick="return _dSectionCollapse('11_2');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Non-Compliant"></a><a onclick="return _dSectionCollapse('11_2');"><font size="2" color="#000080" face="Verdana">Non-Compliant</font></a>
+<ul><font size="2" color="#000080" face="Verdana">The Audit Report non-compliant report is to be used for audits where there is non-compliance. </font><br>
+<div id="cSec11_2_1"><a href="javascript:_dSectionExpand('11_2_1')" onclick="return _dSectionExpand('11_2_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Risk Assessment of non-compliance"></a><a onclick="return _dSectionExpand('11_2_1');"><font size="2" color="#000080" face="Verdana">Risk Assessment of non-compliance</font></a></div><div id="xSec11_2_1"><a href="javascript:_dSectionCollapse('11_2_1')" onclick="return _dSectionCollapse('11_2_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Risk Assessment of non-compliance"></a><a onclick="return _dSectionCollapse('11_2_1');"><font size="2" color="#000080" face="Verdana">Risk Assessment of non-compliance</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Any non-compliance must be risk assessed. The following guidelines should be used for a risk assessment</font><div id="cSec11_2_1_1"><a href="javascript:_dSectionExpand('11_2_1_1')" onclick="return _dSectionExpand('11_2_1_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Red (Cat 1)"></a><a onclick="return _dSectionExpand('11_2_1_1');"><font size="2" color="#000080" face="Verdana">Red (Cat 1)</font></a></div><div id="xSec11_2_1_1"><a href="javascript:_dSectionCollapse('11_2_1_1')" onclick="return _dSectionCollapse('11_2_1_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Red (Cat 1)"></a><a onclick="return _dSectionCollapse('11_2_1_1');"><font size="2" color="#000080" face="Verdana">Red (Cat 1)</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Where an individual or corporation engages in conduct related to a duty which exposes an individual or class of individuals to a risk of death, serious injury to illness, without a reasonable excuse and they are reckless to the risk, a Direction to Comply notice must be issued for immediate correction.</font><br>
+<br>
+<b><font size="2" color="#000080" face="Verdana">Examples:</font></b>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Failure of a service provider (BEA) to have specific risk control strategies/systems to discharge duties relating to driver fatigue.</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Failure for a service provider to have a system which ensures all affiliated vehicles are appropriately licenced.</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Failure of a service provider to have a safety management system in place to identify and mitigate risk in their business.</font></ul>
+<br>
+<font size="2" color="#000080" face="Verdana">A Category 1 non-compliance must be referred to the TRO for possible Show Cause action. Any Show Cause will be managed by the TRO, Compliance will continue with the Direction to Comply notice.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('11_2_1_1');
+// -->
+</script>
+<div id="cSec11_2_1_2"><a href="javascript:_dSectionExpand('11_2_1_2')" onclick="return _dSectionExpand('11_2_1_2');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Amber (Cat 2)"></a><a onclick="return _dSectionExpand('11_2_1_2');"><font size="2" color="#000080" face="Verdana">Amber (Cat 2)</font></a></div><div id="xSec11_2_1_2"><a href="javascript:_dSectionCollapse('11_2_1_2')" onclick="return _dSectionCollapse('11_2_1_2');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Amber (Cat 2)"></a><a onclick="return _dSectionCollapse('11_2_1_2');"><font size="2" color="#000080" face="Verdana">Amber (Cat 2)</font></a>
+<ul><font size="2" color="#000080" face="Verdana">A risk which exposes an individual or class of individuals to a risk of death or serious injury or illness.</font><b><font size="2" color="#000080" face="Verdana"> </font></b><br>
+<br>
+<b><font size="2" color="#000080" face="Verdana">Examples:</font></b>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Failure to provide periodic data/service reporting (quarterly/annual).</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Failure of the service provider in establishing and implementing a training regime that addresses TMR&#8217;s training requirements, (anti-discrimination, disability awareness and providing wheelchair services).</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Failure of a Taxi BEA to use a system which ensures bookings for person using a wheelchair or TSS member can be received at any time.</font></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('11_2_1_2');
+// -->
+</script>
+<div id="cSec11_2_1_3"><a href="javascript:_dSectionExpand('11_2_1_3')" onclick="return _dSectionExpand('11_2_1_3');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Green (Cat 3)"></a><a onclick="return _dSectionExpand('11_2_1_3');"><font size="2" color="#000080" face="Verdana">Green (Cat 3)</font></a></div><div id="xSec11_2_1_3"><a href="javascript:_dSectionCollapse('11_2_1_3')" onclick="return _dSectionCollapse('11_2_1_3');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Green (Cat 3)"></a><a onclick="return _dSectionCollapse('11_2_1_3');"><font size="2" color="#000080" face="Verdana">Green (Cat 3)</font></a>
+<ul><font size="2" color="#000080" face="Verdana">If a person or corporation has a duty under the framework and contravenes a duty.</font><br>
+<br>
+<b><font size="2" color="#000080" face="Verdana">Examples:</font></b>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Failure to have a system to ensure every affiliated driver displays the taxi driver display card (Taxi BEA&#8217;s only).</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">A service provider having no specific training around the minimisation of driver distraction and correct use of technology.</font><br>
+</ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('11_2_1_3');
+// -->
+</script>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="510" bgcolor="#FFFFFF"><div align="center"><font size="2" color="#000080" face="Verdana"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/Audit_Repor Non_compliant v1.1.docx/$File/Audit_Repor Non_compliant v1.1.docx?OpenElement" target="_new">Audit Report Non Compliant v1.1</a></font></div></td></tr>
+</table>
+<br>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('11_2_1');
+// -->
+</script>
+
+<ul></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('11_2');
+// -->
+</script>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('11');
+// -->
+</script>
+</td></tr>
+</table>
+</td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Direction to Comply</font></td><td width="586" bgcolor="#EFEFEF"><font size="2" color="#000080" face="Verdana">If an audit is formally assessed in the Audit Report as being non-compliance then a Direction to Comply Notice must be created and served on the person.</font><br>
+<br>
+
+<table bordercolor="#efefef" border="1">
+<tr valign="top"><td width="583" bgcolor="#E2D1D8"><div id="cSec12"><a href="javascript:_dSectionExpand('12')" onclick="return _dSectionExpand('12');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Direction to Comply Notice"></a><a onclick="return _dSectionExpand('12');"><font size="2" color="#000080" face="Verdana">Direction to Comply Notice</font></a></div><div id="xSec12"><a href="javascript:_dSectionCollapse('12')" onclick="return _dSectionCollapse('12');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Direction to Comply Notice"></a><a onclick="return _dSectionCollapse('12');"><font size="2" color="#000080" face="Verdana">Direction to Comply Notice</font></a>
+<ul><font size="2" color="#000080" face="Verdana">The following information must be included in the Direction to Comply notice:</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">The specific area of non-compliance, as listed in the Audit Checklist</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">The specified action required to correct the non-compliance</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">The time period for which the correction is to be undertaken</font></ul>
+<br>
+<font size="2" color="#000080" face="Verdana">Other legislative requirements for </font><i><font size="2" color="#000080" face="Verdana">s91ZQ</font></i><font size="2" color="#000080" face="Verdana"> are contained within the Direction to Comply notice.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">There are only two time-frame options available for a person to undertake the corrections: </font>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="16"><font size="2" color="#000080" face="Verdana">1.</font></td><td width="536"><font size="2" color="#000080" face="Verdana">Immediate &#8211; where it was assessed that there is a risk of death or serious injury or illness to an individual</font></td></tr>
+
+<tr valign="top"><td width="16"><font size="2" color="#000080" face="Verdana">2.</font></td><td width="536"><font size="2" color="#000080" face="Verdana">Minimum 5 business days &#8211; for all other non-compliant matters</font></td></tr>
+</table>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="559" bgcolor="#FFFFFF"><div align="center"><font size="2" color="#000080" face="Arial"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/Direction_to_Comply_notice v1.7 300421.docx/$File/Direction_to_Comply_notice v1.7 300421.docx?OpenElement" target="_new">Direction to Comply Notice v1.7 300421</a></font></div></td></tr>
+</table>
+<div id="cSec12_1"><a href="javascript:_dSectionExpand('12_1')" onclick="return _dSectionExpand('12_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Serve Direction to Comply Notice"></a><a onclick="return _dSectionExpand('12_1');"><font size="2" color="#000080" face="Verdana">Serve Direction to Comply Notice</font></a></div><div id="xSec12_1"><a href="javascript:_dSectionCollapse('12_1')" onclick="return _dSectionCollapse('12_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Serve Direction to Comply Notice"></a><a onclick="return _dSectionCollapse('12_1');"><font size="2" color="#000080" face="Verdana">Serve Direction to Comply Notice</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Contact the person to arrange the service or giving of the Direction to Comply notice.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">If you have determined that a minimum five days is required to undertake the corrections, consult with the person to determine the timeframe so that it is both practical and reasonable.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Two copies of the Direction to Comply notice are required (one for the person and one for TMR).</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Once completed serve the notice, using BWC, following DocBase procedures.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Update CID with actions taken.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">Advise your TransLink regional office of action taken.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('12_1');
+// -->
+</script>
+<div id="cSec12_2"><a href="javascript:_dSectionExpand('12_2')" onclick="return _dSectionExpand('12_2');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Follow-up on a Direction to Comply Notice"></a><a onclick="return _dSectionExpand('12_2');"><font size="2" color="#000080" face="Verdana">Follow-up on a Direction to Comply Notice</font></a></div><div id="xSec12_2"><a href="javascript:_dSectionCollapse('12_2')" onclick="return _dSectionCollapse('12_2');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Follow-up on a Direction to Comply Notice"></a><a onclick="return _dSectionCollapse('12_2');"><font size="2" color="#000080" face="Verdana">Follow-up on a Direction to Comply Notice</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Contact the person and arrange for a follow-up of the audit. You can use a new Audit Notice and include the date and time. The date is dependent upon the time schedule set in the Direction to Comply Notice, 4 weeks notice is not required.</font><div id="cSec12_2_1"><a href="javascript:_dSectionExpand('12_2_1')" onclick="return _dSectionExpand('12_2_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Full Compliance"></a><a onclick="return _dSectionExpand('12_2_1');"><font size="2" color="#000080" face="Verdana">Full Compliance</font></a></div><div id="xSec12_2_1"><a href="javascript:_dSectionCollapse('12_2_1')" onclick="return _dSectionCollapse('12_2_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Full Compliance"></a><a onclick="return _dSectionCollapse('12_2_1');"><font size="2" color="#000080" face="Verdana">Full Compliance</font></a>
+<ul><font size="2" color="#000080" face="Verdana">If after the assessment of the corrections listed in the Direction to Comply notice you decide that all the corrections have been made then you endorse the last column in the notice with:</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Date</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Time</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Your name and Q Number</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Your signature</font></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('12_2_1');
+// -->
+</script>
+<div id="cSec12_2_2"><a href="javascript:_dSectionExpand('12_2_2')" onclick="return _dSectionExpand('12_2_2');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Partial Compliance"></a><a onclick="return _dSectionExpand('12_2_2');"><font size="2" color="#000080" face="Verdana">Partial Compliance</font></a></div><div id="xSec12_2_2"><a href="javascript:_dSectionCollapse('12_2_2')" onclick="return _dSectionCollapse('12_2_2');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Partial Compliance"></a><a onclick="return _dSectionCollapse('12_2_2');"><font size="2" color="#000080" face="Verdana">Partial Compliance</font></a>
+<ul><font size="2" color="#000080" face="Verdana">If the outcome is partial compliance, that is, not all the areas specified for correction are compliant, you are to:</font>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="15"><font size="2" color="#000080" face="Verdana">1.</font></td><td width="498"><font size="2" color="#000080" face="Verdana">endorse the fully compliant items on the Direction to Comply notice with the:</font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Date</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Time</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">You name and Q Number</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">Your signature</font></ul>
+</td></tr>
+
+<tr valign="top"><td width="15"><font size="2" color="#000080" face="Verdana">2.</font></td><td width="498"><font size="2" color="#000080" face="Verdana">leave the areas that are non-compliant blank.</font></td></tr>
+</table>
+<br>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('12_2_2');
+// -->
+</script>
+<div id="cSec12_2_3"><a href="javascript:_dSectionExpand('12_2_3')" onclick="return _dSectionExpand('12_2_3');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Non-compliant"></a><a onclick="return _dSectionExpand('12_2_3');"><font size="2" color="#000080" face="Verdana">Non-compliant</font></a></div><div id="xSec12_2_3"><a href="javascript:_dSectionCollapse('12_2_3')" onclick="return _dSectionCollapse('12_2_3');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Non-compliant"></a><a onclick="return _dSectionCollapse('12_2_3');"><font size="2" color="#000080" face="Verdana">Non-compliant</font></a>
+<ul><font size="2" color="#000080" face="Verdana">If, after an extension of time the persons business activity is assessed as still being non-compliant further action is required.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">The options are:</font>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="15"><font size="2" color="#000080" face="Verdana">1.</font></td><td width="498"><font size="2" color="#000080" face="Verdana">Approve a further extension of time granted under section </font><i><font size="2" color="#000080" face="Verdana">91ZQ(4) &#8211; limited to Direction to Comply notice issued</font></i><font size="2" color="#000080" face="Verdana"> under section 91ZQ(2)(b)</font></td></tr>
+
+<tr valign="top"><td width="15"><img width="1" height="1" src="../../../icons/ecblank.gif" border="0" alt=""></td><td width="498"><font size="2" color="#000080" face="Verdana">Commence enforcement action for </font><i><font size="2" color="#000080" face="Verdana">Contravention of a Direction to Comply Notice</font></i><font size="2" color="#000080" face="Verdana">&#8211;  </font><i><font size="2" color="#000080" face="Verdana">s.91ZQ(5)</font></i><font size="2" color="#000080" face="Verdana">. This may be a: </font>
+<ul>
+<li type="disc"><font size="2" color="#000080" face="Verdana">BTA only;<br>
+or</font>
+<li type="disc"><font size="2" color="#000080" face="Verdana">PIN and BTA.</font></ul>
+<font size="2" color="#000080" face="Verdana">The TRO must be informed so they can consider show cause action.</font></td></tr>
+</table>
+<br>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('12_2_3');
+// -->
+</script>
+
+<ul></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('12_2');
+// -->
+</script>
+<div id="cSec12_3"><a href="javascript:_dSectionExpand('12_3')" onclick="return _dSectionExpand('12_3');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Extension of Time"></a><a onclick="return _dSectionExpand('12_3');"><font size="2" color="#000080" face="Verdana">Extension of Time</font></a></div><div id="xSec12_3"><a href="javascript:_dSectionCollapse('12_3')" onclick="return _dSectionCollapse('12_3');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Extension of Time"></a><a onclick="return _dSectionCollapse('12_3');"><font size="2" color="#000080" face="Verdana">Extension of Time</font></a>
+<ul><font size="2" color="#000080" face="Verdana">An extension of time </font><u><font size="2" color="#000080" face="Verdana">cannot</font></u><font size="2" color="#000080" face="Verdana"> be granted for a Direction to Comply Notice where the timeframe for correction was determined to be 'immediate' under section 91ZQ(5)2(a).</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">If a person seeks an extension of the timeframe to correct the non-compliance, you can give that extension in accordance with section 91ZQ(5)2(b</font><font size="2" color="#000080" face="Verdana">) </font><font size="2" color="#000080" face="Verdana">provided the timeframe for correction was not 'immediate'.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">If an extension of time is granted advise your TransLink regional office of the extension details and update CID.</font></ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('12_3');
+// -->
+</script>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('12');
+// -->
+</script>
+</td></tr>
+</table>
+</td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Requests for Review</font></td><td width="586" bgcolor="#EFEFEF">
+<table bordercolor="#efefef" border="1">
+<tr valign="top"><td width="582" bgcolor="#E2D1D8"><div id="cSec13"><a href="javascript:_dSectionExpand('13')" onclick="return _dSectionExpand('13');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Request for review"></a><a onclick="return _dSectionExpand('13');"><font size="2" color="#000080" face="Verdana">Request for review</font></a></div><div id="xSec13"><a href="javascript:_dSectionCollapse('13')" onclick="return _dSectionCollapse('13');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Request for review"></a><a onclick="return _dSectionCollapse('13');"><font size="2" color="#000080" face="Verdana">Request for review</font></a><div id="cSec13_1">
+<ul><a href="javascript:_dSectionExpand('13_1')" onclick="return _dSectionExpand('13_1');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Internal CSB Compliance"></a><a onclick="return _dSectionExpand('13_1');"><font size="2" color="#000080" face="Verdana">Internal CSB Compliance</font></a></ul>
+</div><div id="xSec13_1">
+<ul><a href="javascript:_dSectionCollapse('13_1')" onclick="return _dSectionCollapse('13_1');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Internal CSB Compliance"></a><a onclick="return _dSectionCollapse('13_1');"><font size="2" color="#000080" face="Verdana">Internal CSB Compliance</font></a>
+<ul><font size="2" color="#000080" face="Verdana">Under </font><i><font size="2" color="#808080" face="Verdana">s102 of the TOPT Act</font></i><font size="2" color="#000080" face="Verdana"> a person may apply to the department for an internal review of the decision to give this direction. Part 5, division 2 of the </font><i><font size="2" color="#808080" face="Verdana">Transport Planning and Coordination Act 1994</font></i><font size="2" color="#000080" face="Verdana"> applies to the review.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">The application for the internal review must be made within 28 days of being given Direction to Comply notice. The application must be written and state, in detail, the grounds on which the person wants the decision reviewed.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">These requests are to be directed to the Manager, Compliance.</font></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('13_1');
+// -->
+</script>
+<div id="cSec13_2">
+<ul><a href="javascript:_dSectionExpand('13_2')" onclick="return _dSectionExpand('13_2');"><img src="../../../icons/expand.gif" border="0" alt="Show details for Translink - Regulation Notice"></a><a onclick="return _dSectionExpand('13_2');"><font size="2" color="#000080" face="Verdana">Translink - Regulation Notice</font></a></ul>
+</div><div id="xSec13_2">
+<ul><a href="javascript:_dSectionCollapse('13_2')" onclick="return _dSectionCollapse('13_2');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for Translink - Regulation Notice"></a><a onclick="return _dSectionCollapse('13_2');"><font size="2" color="#000080" face="Verdana">Translink - Regulation Notice</font></a>
+<ul><font size="2" color="#000080" face="Verdana">TransLink Regional Operation (TRO) will manage requests related to Regulation Notices.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">If both a Direction to Comply and Regulation Notice were issued as a result of a serious non-compliance, TRO and Compliance will jointly manage the review process.</font></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('13_2');
+// -->
+</script>
+<div id="cSec13_3">
+<ul><a href="javascript:_dSectionExpand('13_3')" onclick="return _dSectionExpand('13_3');"><img src="../../../icons/expand.gif" border="0" alt="Show details for External Review - QCAT"></a><a onclick="return _dSectionExpand('13_3');"><font size="2" color="#000080" face="Verdana">External Review - QCAT</font></a></ul>
+</div><div id="xSec13_3">
+<ul><a href="javascript:_dSectionCollapse('13_3')" onclick="return _dSectionCollapse('13_3');"><img src="../../../icons/collapse.gif" border="0" alt="Hide details for External Review - QCAT"></a><a onclick="return _dSectionCollapse('13_3');"><font size="2" color="#000080" face="Verdana">External Review - QCAT</font></a>
+<ul><font size="2" color="#000080" face="Verdana">If an internal review decision is adverse to the applicant, the applicant may apply to QCAT for an external review of the decision.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">An application to QCAT for external review of a reviewed decision must be made within 28 days of the person being notified of the decision and of the reasons for the decision. QCAT may extend the period for making an application for external review.</font><br>
+<br>
+<font size="2" color="#000080" face="Verdana">A fact sheet providing further information in relation to the review process can be found in the PT Document Database, </font><b><font size="2" color="#000080" face="Verdana">Refer:</font></b><font size="2" color="#000080" face="Verdana"> </font><a href="Notes://shb1ln04/4A25635C001D648C" target="_blank"><i><font size="2" color="#0000FF" face="Verdana">Passenger Transport database</font></i></a></ul>
+</ul>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('13_3');
+// -->
+</script>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!-- 
+_dSectionCollapse('13');
+// -->
+</script>
+</td></tr>
+</table>
+</td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Records Management</font></td><td width="586" bgcolor="#EFEFEF"><font size="2" color="#000080" face="Verdana">All records to be uploaded into the dedicated regional DMS Container:</font>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="18"><font size="2" color="#000080" face="Verdana">1.</font></td><td width="560"><font size="2" color="#000080" face="Verdana">Corporate Governance and External Relations (110)</font></td></tr>
+
+<tr valign="top"><td width="18"><font size="2" color="#000080" face="Verdana">2.</font></td><td width="560"><font size="2" color="#000080" face="Verdana">Audit and Quality Management</font></td></tr>
+
+<tr valign="top"><td width="18"><font size="2" color="#000080" face="Verdana">3.</font></td><td width="560"><font size="2" color="#000080" face="Verdana">Title: Passenger Transport Audit [Year]</font></td></tr>
+</table>
+<br>
+<font size="2" color="#000080" face="Verdana">CID must be updated at each stage of the audit. When the audit is finalised the next scheduled audit date must be added to CID.</font></td></tr>
+
+<tr valign="top"><td width="94" bgcolor="#C0C0C0"><font size="2" color="#000080" face="Verdana">Additional Information</font></td><td width="586" bgcolor="#EFEFEF">
+<table bordercolor="#efefef" border="1">
+<tr valign="top"><td width="582" bgcolor="#E2D1D8"><div align="center"><font size="2" color="#000080" face="Verdana"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/8.02 Chain of Responsibility for Personalised Transport as at Jan 2021.pdf/$File/8.02 Chain of Responsibility for Personalised Transport as at Jan 2021.pdf?OpenElement" target="_new">Chain of Responsibility for Personalised Transport @ January 2021</a></font></div></td></tr>
+
+<tr valign="top"><td width="582" bgcolor="#E2D1D8"><div align="center"><font size="2" color="#000080" face="Verdana"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf//fileslooflat/COR Guideline for Conducting Personalised Transport Audits FINAL304021.doc/$File/COR Guideline for Conducting Personalised Transport Audits FINAL304021.doc?OpenElement" target="_new">COR Guideline for Conducting Personalised Transport Audits Final 300421</a></font></div></td></tr>
+</table>
+</td></tr>
+</table>
+<br>
+<font size="2" color="#C0C0C0" face="Verdana">Date created: 09/07/2021</font>
+<br>
+				<br>
+
+				</div><!-- end #content -->
+				
+			</div></div><!-- end #article -->
+			
+        </div><!-- end #content-container -->
+</div>
+<!-- end #page-container -->
+		<div id="footer">
+		<ul>
+			<li><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf/index/copyright">Copyright</a></li>
+			<li><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf/index/disclaimer">Disclaimer</a></li>
+			<li><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf/index/privacy">Privacy &amp; Security</a></li>
+<li><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf/index/sitemap" accesskey="3">Site map</a></li>
+			<li class="last-child"><a href="http://szpant:SenaMedal1965%40@puma/tmr/docbase3.nsf/index/access_keys">Access keys</a></li>			
+		</ul>
+		<p>&copy; The State of Queensland (Department of Transport and Main Roads) 2021.</p>
+		<p><a href="http://www.qld.gov.au/" accesskey="1"  target="_blank">Queensland Government</a></p>
+	</div><!-- end #footer -->
+		
+<input name="$$HTMLFrontMatter" type="hidden" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;   &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;">
+<input name="$$HTMLTagAttributes" type="hidden" value="lang=&quot;en&quot;">
+<input name="Form" type="hidden" value="dbaseDoc">
+<input name="Server_Name" type="hidden" value="puma">
+<input name="Path_Info" type="hidden" value="/tmr/docbase3.nsf/index/chain_of_responsibility_audit">
+<input name="Remote_Addr" type="hidden" value="165.240.39.125">
+<input name="HTTP_Referer" type="hidden" value="http://puma/tmr/docbase3.nsf//index/daily_messages_-_july_2021">
+<input name="Layout" type="hidden" value="Default">
+<input name="ServerURL" type="hidden" value="/tmr/docbase3.nsf">
+<input name="DatabaseURL" type="hidden" value="tmr\docbase3.nsf">
+<input name="MenuPos" type="hidden" value="16.x.x.1">
+<input name="Component3HTML" type="hidden" value="">
+<input name="Component4HTML" type="hidden" value="">
+<input name="Component1HTML" type="hidden" value="">
+<input name="Component2HTML" type="hidden" value="">
+<input name="DocLinks" type="hidden" value="">
+<input name="disLastUpdate" type="hidden" value="07/09/2021 12:00:00 AM"></form>
+</body>
+
+<!-- Mirrored from puma/tmr/docbase3.nsf//index/chain_of_responsibility_audit by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Mar 2024 06:49:06 GMT -->
+</html>

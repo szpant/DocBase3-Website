@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Menu>
+	<Level_1 lvlName_1="Accreditation">
+		<Level_2 lvlName_2="Approved Examiner">
+			<MenuItem name="Approved Examiner (AE)" menuURL="../index/approved_examiner_(ae).html"></MenuItem>
+			<Level_3 lvlName_3="The How To:Approved Examiner">
+				<MenuItem name="Approved Examiner Procedures" menuURL="../index/approved_examiner_procedures.html"></MenuItem>
+			</Level_3>
+		</Level_2>
+
+		<Level_2 lvlName_2="Approved Inspection Station">
+			<MenuItem name="Approved Inspection Station (AIS)" menuURL="../index/approved_inspection_station_(ais).html"></MenuItem>
+			<MenuItem name="Approved Inspection Station (AIS) Guide" menuURL="../index/approved_inspection_station_(ais)_guide.html"></MenuItem>
+		</Level_2>
+
+	</Level_1>
+	<Level_1 lvlName_1="Admin">
+		<Level_2 lvlName_2="Approved Examiner (AE)">
+			<MenuItem name="Approved Examiner (AE)" menuURL="../index/approved_examiner_(ae).html"></MenuItem>
+		</Level_2>
+	</Level_1>
+	<Level_1 lvlName_1="Customer"></Level_1>
+	<Level_1 lvlName_1="Driver Licence"></Level_1>
+	<Level_1 lvlName_1="Fees and Forms"></Level_1>
+	<Level_1 lvlName_1="Industry Authority"></Level_1>
+	<Level_1 lvlName_1="Marine Licence"></Level_1>
+	<Level_1 lvlName_1="Offence Management"></Level_1>
+</Menu>
