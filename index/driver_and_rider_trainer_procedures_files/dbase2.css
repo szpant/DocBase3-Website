@@ -1,0 +1,684 @@
+/* reset.css */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea, select {
+    margin: 0;
+    font-family: Verdana,Helvetica,Arial,sans-serif;
+}
+
+textarea {
+    font-size: 100%;
+}
+
+/* reset block elements */
+body {
+    line-height: 1.5;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+dd {
+    margin-left: 2em;
+}
+
+blockquote {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* Vertical rhythm */
+p, ul, ol, dl, blockquote {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* reset lists */
+ul, ol {
+    display: block;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: 1em 0;
+    padding: 0 0 0 3em;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+li {
+    display: list-item;
+}
+
+/* nested lists have no top/bottom margins */
+ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 2 deep unordered lists use a circle */
+ol ul, ul ul {
+    list-style-type: circle;
+}
+
+/* 3 deep (or more) unordered lists use a square */
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style-type: square;
+}
+
+/* reset tables */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-indent: 0;
+}
+
+caption {
+    padding: 0;
+    text-align: center;
+    font-weight: bolder;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    padding: .2em .5em;
+    font-size: 80%;
+}
+
+/* typography */
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    color: #000;
+    background: #fff;
+} #article, #tools, #nav-site, #nav-section, #aside, #last-updated, #last-reviewed {
+    font-size: 80%;
+} #article .caption, #footer {
+    font-size: 75%;
+} #breadcrumbs {
+    font-size: 85%; /* 85% of 80% (#breadcrumbs is nested in #article) */
+}
+
+h1, h2, h3, h4, h5, h6, dt, strong, caption {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+i, cite, em, var, dfn {
+    font-style: italic;
+}
+
+tt, code, kbd, samp, pre {
+    font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+    display: block;
+    white-space: pre;
+    margin: 1em 0;
+}
+
+/* titles */
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+}
+
+@media screen, projection, tv, handheld 
+{
+    /* layout */
+	body 
+	{
+	        text-align: center;
+	} 
+	#header, #nav-site, #page-container 
+	{
+        	text-align: left;
+	} 	
+	#nav-site 
+	{
+        	clear: both;
+        	overflow: hidden;
+		font-weight: bold;
+	} 
+	#nav a:visited 
+	{
+        	border: 1px solid #F9F9F9;
+        	color: #000;
+	} 
+	#nav a:hover 
+	{
+        	background-color: #000;
+        	border: 1px solid #F9F9F9;
+	} 
+	#nav a 
+	{
+        	background-color: #000;
+        	border: 1px solid #F9F9F9;
+        	padding: 5px 5px 5px 5px;
+		cursor:pointer;
+	} 
+	#page-container 
+	{
+        	clear: both;
+        	position: relative;
+        	overflow: hidden;
+        	max-width: 99em;
+        	margin: 0 auto;
+        	padding-top: .5em;
+        	padding-bottom: 1em;
+	} 
+	#nav-section, 
+	#breadcrumb, 
+	#content, 
+	#aside, 
+	#content-container, 
+	#article 
+	{
+        	float: left;
+        	position: relative;
+	} 
+	#menuTree a 
+	{ 
+		text-decoration: none; 
+		color: black; 
+	} 
+	#sitemap
+	{
+        	font-weight: bold;
+	}		
+	#menuTree a:hover 
+	{
+		background-color: #DFE5EC;
+        	border: 1px solid #F9F9F9;
+	}
+	.readonly 
+	{
+		color: #999999;		
+	}
+
+    	/* Setup box-model */ 
+    	#nav-section .inner, 
+    	#aside .inner, 
+    	#article .inner, 
+    	#breadcrumbs, #content 
+    	{
+        	overflow: hidden;
+	}
+
+    	/* Consistent layout margins */ 
+    	#nav-section .inner, 
+    	#aside .inner, 
+    	#article .inner, 
+    	#last-updated, 
+    	#last-reviewed 
+    	{
+        	margin: 0 0 .5em .5em;
+	} 
+	#content, 
+	#last-updated, 
+	#last-reviewed 
+	{
+        	margin-top: .5em;
+	} 
+	#aside .inner 
+	{
+        	margin: 0 .5em .5em;
+	}
+
+    	/* Consistent layout padding */ 
+    	#nav-section .inner, 
+    	#aside .inner, 
+    	#content, 
+    	#last-updated, 
+    	#last-reviewed 
+    	{
+        	padding: 0 1em .5em;
+	}
+
+    	/* Widths */ 
+    	#nav-section, 
+    	#content-container, 
+    	#article, 
+    	#aside 
+    	{
+        	min-width: 10em;
+	} 
+	#nav-section 
+	{
+        	width: 25%;
+	} 
+	#content-container 
+	{
+        	width: 75%;
+	} 
+	#article 
+	{
+        	/*width: 67%;*/
+	} 
+	#aside 
+	{
+        	width: 33%;
+		float: right;
+	} 
+	#last-updated, 
+	#last-reviewed 
+	{
+        	clear: both;
+	} 
+	#footer 
+	{
+        	clear: both;
+       		padding: 1em 1em .5em;
+        	line-height: 1;
+        	text-align: center;
+	}
+
+    	/* header */ 
+    	#header 
+    	{
+        	min-height: 95px;
+        	position: relative;
+	} 
+	#header .inner 
+	{
+        	padding: 0px 20px 0;
+        	overflow: hidden;
+	} 
+	#header a img 	
+	{
+        	border: none;
+	} 
+	#qg-logo 
+	{
+        	float: left;
+	} 
+	#qg-logo img 
+	{
+        	width: 240px;
+        	height: 60px;
+	} 
+	#agency 
+	{
+        	float: right;
+        	clear: right;
+        	display: inline;
+        	padding-bottom: 40px;
+	} 
+	#agency img 
+	{
+        	width: 260px;
+        	height: 20px;
+	} 
+	#tools 
+	{
+        	float: right;
+        	overflow: hidden;
+        	display: block;
+	} 
+	#tools form 
+	{
+        	text-align: left;
+	} 
+	#search-form 
+	{
+        	padding-left: .5em;
+	}
+
+    	/* visually hide search field label */ 
+    	#search-form label 
+    	{
+        	position: absolute;
+        	left: -9999em;
+	}
+
+    	/* navigation menus */ 
+    	#tools, 
+    	#nav-site ul, 
+    	#breadcrumbs ol, 
+    	#footer ul 
+    	{
+        	list-style-type: none;
+        	margin: 0;
+        	padding: 0;
+	} 
+	#breadcrumbs 
+	{
+        	/*margin-top: 1em;*/
+        	/*margin-left: -1em;*/
+	} 
+	#tools li, 
+	#nav-site li, 
+	#breadcrumbs li, 
+	#footer li 
+	{
+        	float: left;
+        	display: block;
+        	padding: .2em .5em;
+	} 
+	#footer li 
+	{
+        	float: none;
+        	display: inline-block;
+	} 
+	#tools li.last-child, 
+	#tools li:last-child, 
+	#nav-site li.last-child, 
+	#nav-site li:last-child, 
+	#breadcrumbs li.last-child, 
+	#breadcrumbs li:last-child, 
+	#footer li.last-child, 
+	#footer li:last-child 
+	{
+        	background: none;
+        	padding-right: 0;
+	} 
+	#breadcrumbs li.last-child, 
+	#breadcrumbs li:last-child 
+	{
+        	padding: .4em 1em .5em;
+        	white-space: nowrap;
+	} 
+	#tools a, 
+	#nav-site a, 
+	#breadcrumbs a, 
+	#footer ul a 	
+	{
+        	display: block;
+        	white-space: nowrap;
+        	padding: .2em .5em .3em;
+	}
+
+    	/* Colours */ 
+    	#header 
+    	{
+        	min-height: 95px;
+        	position: relative;
+        	background: transparent url(../../../img/header-bg.png/$file/header-bg.png) left bottom repeat-x;
+	}
+
+    	/*#header .inner 
+    	{
+     		background: transparent url(/testonly/docbase2.nsf/images/agency-branding.png/$file/agency-branding.png) left bottom no-repeat;
+     	}*/ 
+     	#nav-site 
+     	{
+        	background: #fff url(../../../img/nav-bg.png/$file/nav-bg.png) left bottom repeat-x;
+	} 
+	#nav-section .inner, 
+	#breadcrumbs, 
+	#aside .inner 
+	{
+        	background: #eef1f5;
+	} 
+	#content 
+	{
+        	background: #fff;
+        	border: 1px solid #eef1f5;
+	} 
+	#tools li, 
+	#nav-site li, 
+	#breadcrumbs li, 
+	#footer li 
+	{
+        	background: transparent url(../../../img/separator.png/$file/separator.png) right center no-repeat;
+	} 
+	#breadcrumbs li 
+	{
+        	padding-right: 15px;
+        	background: transparent url(../../../img/breadcrumb.png/$file/breadcrumb.png) right center no-repeat;
+	} 
+	#tools a:hover, 
+	#nav-site a:hover, 
+	#breadcrumbs a:hover, 
+	#footer ul a:hover 
+	{
+        	background: #eef1f5;
+	} 
+	#footer 
+	{
+        	border-top: 1px solid #c4d2e1;
+        	background: #fff;
+	}
+
+	adv-search 
+	{
+        	padding: 10px 10px 10px 10px;
+        	text-align: left;
+	}
+
+	.feedback 
+	{
+        	padding: 5px 5px 10px 5px;
+        	text-align: left;
+	}
+
+	search-results 
+	{
+        	padding: 10px 0px 0px 0px;
+	}
+
+    	/* 			Form Error Styles				*/
+  
+	.errorHighlight 
+	{
+        	border: 2px solid #ff0000;
+	}
+	#errorMessage 
+	{
+        	border: 2px solid #990033;
+        	color: #990033;
+        	background-color: #e9e9ea;
+        	padding: 1%;
+        	width: 90%;
+        	display: block;
+        	height: auto;
+        	position: static;
+        	line-height: 1;
+	}
+	#errorMessage ul 
+	{
+        	list-style-type: none;
+	}
+	#errorMessage ul li 
+	{
+        	margin: 1% 0 0 1em;
+        	list-style-type: disc;
+        	line-height: 1;
+	}
+	#errorMessage.hideVisually 
+	{
+        	position: absolute;
+        	left: -999em;
+	}
+
+	.tab 
+	{
+		color: #000;
+		background: #F4E8F2;
+		text-decoration: none;
+		padding: 0px 5px 0px 5px;
+		border-style: outset;
+		border-bottom-style: none;
+	} 
+
+
+}
+
+.feedback #FeedbackCat
+{
+	z-index: 0;
+}
+/* Person search box styles */
+#greyout
+{
+	background: #808080;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	z-index: 500;
+	width: 465px;
+	height: 300px;
+}
+
+#popupScreen
+{
+	background-color: #fff;
+	border: 2px solid #dad8bc;
+	border-right: 3px solid #dad8bc;
+	border-bottom: 3px solid #dad8bc;
+	position: absolute;
+	top: 105px;
+	left: 105px;
+	width: 450px;
+	height: 285px;
+	z-index: 1000;
+}
+
+#popupScreen #popupClose
+{
+	float: right;
+	text-align: right;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	padding-right: 23px;
+	background: transparent url("../Close_popup.gif") no-repeat top right;
+}
+
+#popupScreen #popupScreenContent
+{
+	overflow: auto;
+	height: 90%;
+	padding: 5px;
+}
+
+#popupScreen #popupScreenContent #loadingImage
+{
+	margin-left: 45%;
+	margin-top: 15%;
+}
+
+#popupScreen #popupScreenContent ol
+{
+	list-style-type: none;
+}
+
+#popupScreen #popupScreenContent ul
+{
+	margin-left: 1em;
+}
+
+#popupScreen h2
+{
+	display: block;
+	margin: 1em 0 0 0;
+	padding: 0;
+	border-bottom: 3px dotted #808080;
+}
+
+#popupScreen legend
+{
+	color: #404040;
+	font-size: 0.8em;
+}
+#popupScreen fieldset
+{
+	border: none;
+}
+#popupScreen label
+{
+	color: #000080;
+}
+#popupScreen label em, 
+#popupScreen p em, 
+#popupScreen legend em
+{
+	font-weight: bold;
+	font-style: normal;
+	color: red;
+	font-size: 80%;
+}
+#popupScreen label em span, 
+#popupScreen p em span, 
+#popupScreen legend em span
+{
+	position: absolute;
+	left: -999em;
+}
+
+.hideFull
+{
+	display: none;
+}
+
+/* Print styles */
+
+#biidtable td, th
+{
+	font-size: 100%;
+}
+
+#biidquestion
+{
+	font-weight: bold;
+	width: 180px;
+}
+
+@media print {
+    @page { /* Ask Jason why this is important */
+size:
+        21cm 29.7cm;
+
+windows:
+        0;
+}
+
+body { /* Ask Jason why this is important */
+        width: 98%;
+} #access, #browser, #tools, #nav-site, #nav-section {
+        display: none;
+}
+}

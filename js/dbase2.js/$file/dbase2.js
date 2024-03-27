@@ -604,6 +604,7 @@ function loadMenu(varURL, varXLS){
      transformation script for Firefox browser
      */
     //if (document.implementation && document.implementation.createDocument) {
+    return;
 	if (document.documentMode <= 11) {
 	        xml = new ActiveXObject("MSXML2.DOMDocument")
             xml.async = false
